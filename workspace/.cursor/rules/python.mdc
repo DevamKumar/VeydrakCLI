@@ -1,0 +1,10 @@
+---
+description: Python specific conventions
+globs: "*.py"
+---
+
+Python Coding Standards:
+1. Always use snake_case for variables and functions.
+2. Provide type hints for all function arguments and return types.
+3. Classes should use CamelCase.
+4. Add docstrings to all classes and methods.

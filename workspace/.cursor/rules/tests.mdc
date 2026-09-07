@@ -1,0 +1,9 @@
+---
+globs: "**/test_*.py"
+alwaysApply: false
+---
+
+Testing Guidelines:
+1. Use the `unittest` or `pytest` framework.
+2. All test functions must start with `test_`.
+3. Include descriptive comments explaining what edge cases are being tested.
