@@ -23,8 +23,9 @@ class LocalSandbox:
                 f.write(code)
                 
             try:
+                import sys
                 result = subprocess.run(
-                    ["python", "script.py"],
+                    [sys.executable, "script.py"],
                     cwd=temp_dir,
                     capture_output=True,
                     text=True,
