@@ -1,7 +1,7 @@
 import os
-from veydrak.llm import get_llm, POWERFUL_MODEL
-from veydrak.sandbox import LocalSandbox
-from veydrak.graphs_reflection import build_full_agent
+from veydrak.llm.llm import get_llm, POWERFUL_MODEL
+from veydrak.sandbox.sandbox import LocalSandbox
+from veydrak.agent.graphs_reflection import build_full_agent
 
 if __name__ == "__main__":
     llm = get_llm(POWERFUL_MODEL)

@@ -14,10 +14,10 @@ import asyncio
 import inspect
 
 ROOT = os.path.dirname(__file__)
-WORKSPACE = os.path.join(ROOT, "workspace")
+WORKSPACE = os.path.join(ROOT, "sample-project")
 
-from veydrak.workspace import Workspace
-from veydrak.graphs_orchestrator import build_orchestrator, demo_orchestrator, OrchestratorState
+from veydrak.workspace.workspace import Workspace
+from veydrak.agent.graphs_orchestrator import build_orchestrator, demo_orchestrator, OrchestratorState
 from langgraph.types import Command
 
 

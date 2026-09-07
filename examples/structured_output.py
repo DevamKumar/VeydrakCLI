@@ -1,5 +1,5 @@
-from veydrak.llm import get_llm, structured, FAST_MODEL
-from veydrak.schemas import CodeOutput
+from veydrak.llm.llm import get_llm, structured, FAST_MODEL
+from veydrak.schemas.schemas import CodeOutput
 
 if __name__ == "__main__":
     print("--- 1. Testing Unstructured LLM ---\n")

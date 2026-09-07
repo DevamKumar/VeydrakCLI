@@ -13,19 +13,19 @@ import os
 import asyncio
 
 ROOT = os.path.dirname(__file__)
-WORKSPACE = os.path.join(ROOT, "workspace")
+WORKSPACE = os.path.join(ROOT, "sample-project")
 
 # ── Imports ──────────────────────────────────────────────────────────────────
 from langchain_core.messages import HumanMessage
 
-from veydrak.llm import get_llm, structured, FAST_MODEL
-from veydrak.sandbox import LocalSandbox
-from veydrak.tools import make_tools
-from veydrak.mcp import MCP_SERVER_URL, aget_mcp_tools, get_fallback_web_tools
-from veydrak.schemas import Plan
-from veydrak.orchestrator import OrchestratorState
-from veydrak.graphs import build_tool_agent
-from veydrak.rules import load_rules
+from veydrak.llm.llm import get_llm, structured, FAST_MODEL
+from veydrak.sandbox.sandbox import LocalSandbox
+from veydrak.tools.tools import make_tools
+from veydrak.tools.mcp import MCP_SERVER_URL, aget_mcp_tools, get_fallback_web_tools
+from veydrak.schemas.schemas import Plan
+from veydrak.agent.orchestrator import OrchestratorState
+from veydrak.agent.graphs import build_tool_agent
+from veydrak.codebase.rules import load_rules
 
 # ── Setup ─────────────────────────────────────────────────────────────────────
 llm = get_llm(FAST_MODEL)

@@ -1,10 +1,10 @@
 import os
 import asyncio
 from langchain_core.messages import HumanMessage, SystemMessage
-from veydrak.llm import get_llm, FAST_MODEL
-from veydrak.tools import get_basic_tools
-from veydrak.graphs import build_tool_agent
-from veydrak.rules import load_rules
+from veydrak.llm.llm import get_llm, FAST_MODEL
+from veydrak.tools.tools import get_basic_tools
+from veydrak.agent.graphs import build_tool_agent
+from veydrak.codebase.rules import load_rules
 
 async def stream_agent(agent, user_message: str) -> None:
     inputs = {"messages": [HumanMessage(content=user_message)]}

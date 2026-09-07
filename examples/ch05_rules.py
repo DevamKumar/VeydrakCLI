@@ -1,9 +1,9 @@
 import os
 from langchain_core.messages import HumanMessage
-from veydrak.llm import get_llm, POWERFUL_MODEL
-from veydrak.tools import get_basic_tools
-from veydrak.graphs import build_tool_agent
-from veydrak.rules import list_rules, load_rules
+from veydrak.llm.llm import get_llm, POWERFUL_MODEL
+from veydrak.tools.tools import get_basic_tools
+from veydrak.agent.graphs import build_tool_agent
+from veydrak.codebase.rules import list_rules, load_rules
 
 if __name__ == "__main__":
     # Ensure workspace exists

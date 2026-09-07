@@ -1,7 +1,7 @@
-from veydrak.llm import get_llm, structured, FAST_MODEL
-from veydrak.schemas import ReviewResult
-from veydrak.sandbox import LocalSandbox
-from veydrak.graphs_reflection import build_full_agent, FullAgentState
+from veydrak.llm.llm import get_llm, structured, FAST_MODEL
+from veydrak.schemas.schemas import ReviewResult
+from veydrak.sandbox.sandbox import LocalSandbox
+from veydrak.agent.graphs_reflection import build_full_agent, FullAgentState
 import inspect
 
 if __name__ == "__main__":

@@ -1,10 +1,10 @@
 import os
-from veydrak.rules import load_rules
-from veydrak.llm import get_llm, FAST_MODEL
-from veydrak.sandbox import LocalSandbox
-from veydrak.graphs_reflection import build_full_agent
-from veydrak.skills import load_skills, skills_catalog, make_read_skill_tool
-from veydrak.graphs import build_tool_agent
+from veydrak.codebase.rules import load_rules
+from veydrak.llm.llm import get_llm, FAST_MODEL
+from veydrak.sandbox.sandbox import LocalSandbox
+from veydrak.agent.graphs_reflection import build_full_agent
+from veydrak.codebase.skills import load_skills, skills_catalog, make_read_skill_tool
+from veydrak.agent.graphs import build_tool_agent
 from langchain_core.messages import HumanMessage
 
 def print_messages(messages, width=100):

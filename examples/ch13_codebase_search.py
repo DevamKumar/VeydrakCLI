@@ -13,17 +13,17 @@ import os
 import sys
 
 ROOT = os.path.dirname(__file__)
-WORKSPACE = os.path.join(ROOT, "workspace")
+WORKSPACE = os.path.join(ROOT, "sample-project")
 PROJECT_DIR = ROOT  # search the whole project source for streaming demos
 
 # ── Imports ──────────────────────────────────────────────────────────────────
 from langchain_core.messages import HumanMessage, SystemMessage
 
-from veydrak.search import repo_map, search_codebase
-from veydrak.tools import get_basic_tools
-from veydrak.llm import get_llm, FAST_MODEL
-from veydrak.graphs import build_tool_agent
-from veydrak.rules import load_rules
+from veydrak.codebase.search import repo_map, search_codebase
+from veydrak.tools.tools import get_basic_tools
+from veydrak.llm.llm import get_llm, FAST_MODEL
+from veydrak.agent.graphs import build_tool_agent
+from veydrak.codebase.rules import load_rules
 
 # ── LLM & system prompt ──────────────────────────────────────────────────────
 llm = get_llm(FAST_MODEL)

@@ -1,10 +1,10 @@
 import os
 import asyncio
-from veydrak.workspace import Workspace
-from veydrak.graphs_orchestrator import demo_orchestrator
+from veydrak.workspace.workspace import Workspace
+from veydrak.agent.graphs_orchestrator import demo_orchestrator
 
 ROOT = os.path.dirname(__file__)
-WORKSPACE = os.path.join(ROOT, "workspace")
+WORKSPACE = os.path.join(ROOT, "sample-project")
 
 ws = Workspace(WORKSPACE)
 agent = demo_orchestrator(ROOT, ws)

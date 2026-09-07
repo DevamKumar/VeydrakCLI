@@ -1,6 +1,6 @@
-from veydrak.sandbox import LocalSandbox
-from veydrak.graphs_bugbot import build_bugbot, AgentState
-from veydrak.llm import get_llm, FAST_MODEL
+from veydrak.sandbox.sandbox import LocalSandbox
+from veydrak.agent.graphs_bugbot import build_bugbot, AgentState
+from veydrak.llm.llm import get_llm, FAST_MODEL
 import inspect
 from veydrak import graphs_bugbot
 

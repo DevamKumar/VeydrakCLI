@@ -6,7 +6,7 @@ load_dotenv()
 
 print("API key loaded" if os.getenv("OPENAI_API_KEY") else "API key NOT found: copy .env.example to .env and add your key")
 
-from veydrak.llm import get_llm, FAST_MODEL
+from veydrak.llm.llm import get_llm, FAST_MODEL
 
 if __name__ == "__main__":
     try:

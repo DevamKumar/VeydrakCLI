@@ -1,12 +1,12 @@
 import os
 import inspect
-from veydrak.workspace import Workspace
-from veydrak.graphs_parallel import ParallelState, add_to_list, build_parallel_agent, demo_parallel_agent
-from veydrak.graphs_orchestrator import run_tests
-from veydrak.sandbox import LocalSandbox
+from veydrak.workspace.workspace import Workspace
+from veydrak.agent.graphs_parallel import ParallelState, add_to_list, build_parallel_agent, demo_parallel_agent
+from veydrak.agent.graphs_orchestrator import run_tests
+from veydrak.sandbox.sandbox import LocalSandbox
 
 ROOT = os.path.dirname(__file__)
-WORKSPACE = os.path.join(ROOT, "workspace")
+WORKSPACE = os.path.join(ROOT, "sample-project")
 
 ws = Workspace(WORKSPACE)
 snapshot = Workspace(ws.snapshot())  # the parallel demo works on a copy of the workspace
