@@ -27,9 +27,9 @@ from langgraph.graph import StateGraph, START, END
 from langgraph.types import interrupt
 from langgraph.checkpoint.memory import MemorySaver
 
-from veydrak.schemas import Plan, CodeOutput, ReviewResult
-from veydrak.sandbox import LocalSandbox
-from veydrak.workspace import Workspace
+from veydrak.schemas.schemas import Plan, CodeOutput, ReviewResult
+from veydrak.sandbox.sandbox import LocalSandbox
+from veydrak.workspace.workspace import Workspace
 
 
 # ═══════════════════════════════════════════════════════════════════════════════
@@ -395,7 +395,7 @@ def demo_orchestrator(root_dir: str, workspace: Workspace):
     """
     Wire up the LLM, sandbox, and workspace into a compiled orchestrator.
     """
-    from veydrak.llm import get_llm, FAST_MODEL
+    from veydrak.llm.llm import get_llm, FAST_MODEL
 
     llm = get_llm(FAST_MODEL)
     sandbox = LocalSandbox()

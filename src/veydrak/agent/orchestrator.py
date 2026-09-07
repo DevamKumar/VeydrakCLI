@@ -10,7 +10,7 @@ Defined here in Step 14 so the planner can populate it.
 from typing import Optional
 from typing_extensions import TypedDict
 from langchain_core.messages import BaseMessage
-from veydrak.schemas import Plan, FileTask
+from veydrak.schemas.schemas import Plan, FileTask
 
 
 class OrchestratorState(TypedDict):

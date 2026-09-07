@@ -2,7 +2,7 @@ from typing import Optional
 from typing_extensions import TypedDict
 from langchain_core.language_models import BaseChatModel
 from langgraph.graph import StateGraph, START, END
-from veydrak.schemas import CodeOutput
+from veydrak.schemas.schemas import CodeOutput
 
 class AgentState(TypedDict):
     task: str

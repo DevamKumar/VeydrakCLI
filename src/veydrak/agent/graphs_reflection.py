@@ -2,8 +2,8 @@ from typing import Optional
 from typing_extensions import TypedDict
 from langchain_core.language_models import BaseChatModel
 from langgraph.graph import StateGraph, START, END
-from veydrak.schemas import CodeOutput, ReviewResult
-from veydrak.sandbox import LocalSandbox
+from veydrak.schemas.schemas import CodeOutput, ReviewResult
+from veydrak.sandbox.sandbox import LocalSandbox
 
 class FullAgentState(TypedDict):
     task: str

@@ -10,8 +10,8 @@ from langchain_core.language_models import BaseChatModel
 from langgraph.graph import StateGraph, START, END
 from langgraph.types import Send
 
-from veydrak.schemas import Plan, CodeOutput
-from veydrak.workspace import Workspace
+from veydrak.schemas.schemas import Plan, CodeOutput
+from veydrak.workspace.workspace import Workspace
 
 # Reducer for parallel nodes to merge generated code
 def add_to_list(left: list, right: list) -> list:
@@ -128,6 +128,6 @@ def build_parallel_agent(llm: BaseChatModel, workspace: Workspace):
     return workflow.compile()
 
 def demo_parallel_agent(root_dir: str, workspace: Workspace):
-    from veydrak.llm import get_llm, FAST_MODEL
+    from veydrak.llm.llm import get_llm, FAST_MODEL
     llm = get_llm(FAST_MODEL)
     return build_parallel_agent(llm, workspace)
